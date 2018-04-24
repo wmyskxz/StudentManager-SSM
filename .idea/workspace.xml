@@ -7,78 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1c263fd-38a3-4a21-8810-8fa79cd4b76d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/artifacts/StudentManagerSSM_war.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/artifacts/StudentManagerSSM_war_exploded.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/compiler.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/encodings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__com_mchange_c3p0_0_9_5_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_11.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__javax_javaee_api_7_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_41.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__org_apache_taglibs_taglibs_standard_impl_1_2_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__org_mybatis_mybatis_3_4_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__org_springframework_spring_aop_4_3_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__org_springframework_spring_beans_4_3_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__org_springframework_spring_context_4_3_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__org_springframework_spring_core_4_3_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__org_springframework_spring_expression_4_3_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__org_springframework_spring_test_4_3_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__org_springframework_spring_tx_4_3_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__org_springframework_spring_web_4_3_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_5_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/StudentManagerSSM.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/java/cn/wmyskxz/controller/StudentController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/java/cn/wmyskxz/dao/StudentDao.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/java/cn/wmyskxz/entity/Student.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/java/cn/wmyskxz/service/StudentService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/java/cn/wmyskxz/service/StudentServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/java/cn/wmyskxz/util/DateUtil.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/java/cn/wmyskxz/util/Page.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/resources/jdbc.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/resources/logback.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/resources/mapper/StudentDao.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/resources/spring-mvc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/resources/spring-mybatis.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/webapp/WEB-INF/views/editStudent.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/webapp/WEB-INF/views/listStudent.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/webapp/WEB-INF/web.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/webapp/css/bootstrap/3.3.6/bootstrap-theme.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/webapp/css/bootstrap/3.3.6/bootstrap-theme.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/webapp/css/bootstrap/3.3.6/bootstrap-theme.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/webapp/css/bootstrap/3.3.6/bootstrap-theme.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/webapp/css/bootstrap/3.3.6/bootstrap.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/webapp/css/bootstrap/3.3.6/bootstrap.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/webapp/css/bootstrap/3.3.6/bootstrap.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/webapp/css/bootstrap/3.3.6/bootstrap.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/webapp/css/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/webapp/css/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/webapp/css/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/webapp/css/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/webapp/css/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/webapp/css/style.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/webapp/js/bootstrap/3.3.6/bootstrap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/webapp/js/bootstrap/3.3.6/bootstrap.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/webapp/js/bootstrap/3.3.6/npm.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../StudentManagerSSM/src/main/webapp/js/jquery/2.0.0/jquery.min.js" />
+      <change beforePath="$PROJECT_DIR$/../StudentManagerSSM/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../StudentManagerSSM/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/../StudentManagerSSM/out/" />
     <ignored path="$PROJECT_DIR$/../StudentManagerSSM/target/" />
@@ -152,8 +81,8 @@
       <file leaf-file-name="StudentController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../StudentManagerSSM/src/main/java/cn/wmyskxz/controller/StudentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="75" column="29" lean-forward="true" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
+            <state relative-caret-position="438">
+              <caret line="77" column="51" lean-forward="true" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
               <folding>
                 <element signature="docComment;class#StudentController#0" expanded="false" />
                 <element signature="method#addStudent#0;class#StudentController#0" expanded="false" />
@@ -573,19 +502,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524552125373</updated>
-      <workItem from="1524552136749" duration="7897000" />
+      <workItem from="1524552136749" duration="8820000" />
     </task>
+    <task id="LOCAL-00001" summary="版本1.0?">
+      <created>1524573664402</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1524573664402</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7897000" />
+    <option name="totallyTimeSpent" value="8820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32142857" sideWeight="0.50208336" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -599,16 +536,16 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28172043" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28094727" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32142857" sideWeight="0.49791667" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18550107" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -624,8 +561,38 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="版本1.0?" />
+    <option name="LAST_COMMIT_MESSAGE" value="版本1.0?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -831,8 +798,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../StudentManagerSSM/src/main/java/cn/wmyskxz/controller/StudentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="75" column="29" lean-forward="true" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
+        <state relative-caret-position="438">
+          <caret line="77" column="51" lean-forward="true" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
           <folding>
             <element signature="docComment;class#StudentController#0" expanded="false" />
             <element signature="method#addStudent#0;class#StudentController#0" expanded="false" />

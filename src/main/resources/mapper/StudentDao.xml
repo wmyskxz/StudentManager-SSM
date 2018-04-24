@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 将namespace的值设置为DAO类对应的路径 -->
+<mapper namespace="cn.wmyskxz.dao.StudentDao">
+
+    <!-- 查询数据条目 -->
+    <select id="getTotal" resultType="int">
+        SELECT COUNT(*) FROM student
+    </select>
+
+    <!-- 增加一条数据 -->
+    <insert id="addStudent" parameterType="Student">
+        INSERT INTO student VALUES(NULL, #{student_id}, #{name}, #{age}, #{sex}, #{birthday})
+    </insert>
+
+    <!-- 删除一条数据 -->
+    <delete id="deleteStudent" parameterType="int">
+        DELETE FROM student WHERE id = #{id}
+    </delete>
+
+    <!-- 更新一条数据 -->
+    <update id="updateStudent" parameterType="Student">
+        UPDATE student SET student_id = #{student_id}, name = #{name},
+        age = #{age}, sex = #{sex}, birthday = #{birthday} WHERE id = #{id}
+    </update>
+
+    <!-- 查询一条数据 -->
+    <select id="getStudent" resultMap="student" parameterType="int">
+        SELECT * FROM student WHERE id = #{id}
+    </select>
+
+    <resultMap id="student" type="student">
+        <id column="id" property="id"/>
+        <result column="student_id" property="student_id"/>
+        <result column="name" property="name"/>
+        <result column="age" property="age"/>
+        <result column="sex" property="sex"/>
+        <result column="birthday" property="birthday" javaType="java.sql.Date"/>
+    </resultMap>
+
+    <!-- 查询从start位置开始的count条数据-->
+    <select id="list" resultMap="student">
+        SELECT * FROM student ORDER BY student_id desc limit #{param1}, #{param2}
+    </select>
+</mapper>

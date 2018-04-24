@@ -69,6 +69,7 @@ public class StudentController {
             count = Integer.parseInt(request.getParameter("page.count"));
         } catch (Exception e) {
         }
+
         Page page = new Page(start, count);
 
         List<Student> students = studentService.list(page.getStart(), page.getCount());

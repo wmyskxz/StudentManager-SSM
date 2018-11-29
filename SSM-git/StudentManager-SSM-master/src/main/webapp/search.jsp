@@ -5,6 +5,23 @@
 <head>
 <meta charset="utf-8">
 <title>查询数据库页面</title>
+    <style>
+body{
+
+background-position: center center;
+
+    
+    /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+    background-attachment: fixed;  //此条属性必须设置否则可能无效/
+    /* 让背景图基于容器大小伸缩 */
+   background-size: cover;
+   /* 设置背景颜色，背景图加载过程中会显示背景色 */
+   background-color:	#E6E6FA;
+
+
+
+}
+</style>
  <link href="js/bootstrap/datatimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet" />
  <script type="text/javascript" src="js/jquery/datatimepicker/bootstrap-datetimepicker.js"></script>
  

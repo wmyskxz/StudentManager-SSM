@@ -7,6 +7,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 
 import javax.servlet.ServletOutputStream;
@@ -15,13 +16,17 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
 
 import cn.wmyskxz.entity.Student;
+import cn.wmyskxz.entity.StudentGroup;
 import cn.wmyskxz.entity.StudentInfo;
 import cn.wmyskxz.service.StudentInfoService;
 import cn.wmyskxz.util.FileUtils;
@@ -33,6 +38,23 @@ public class StudentInfoController {
 	@Autowired
 	StudentInfoService studentInfo;
 	
+	//返回json数据
+	 @RequestMapping(value="/getAll",method=RequestMethod.POST,produces="application/json")
+	 @ResponseBody
+    public List<StudentGroup> barData(HttpServletRequest request) {
+        List <StudentGroup>list=studentInfo.groupByYear();
+        return list;
+    }
+
+    @RequestMapping("/groupStat")
+    public ModelAndView MyData(HttpServletRequest request) {
+       
+    	ModelAndView mav = new ModelAndView("statistic");
+	       
+	     
+	        return mav;
+    }
+
 	@RequestMapping("/exportExcel")
 	public void exportExcel(HttpServletRequest request,HttpServletResponse response) throws Exception{
 		response.setContentType("application/vnd.ms-excel"); // 常见的文件 可以省略
@@ -112,6 +134,8 @@ public class StudentInfoController {
 	@RequestMapping("/addStudentInfo")
 	public String addStudentInfo(HttpServletRequest request,HttpServletResponse response) {
 		StudentInfo info=new StudentInfo();
+		if(request.getParameter("sname")==null)
+			return "addinfo";
 		info.setAge(Integer.parseInt(request.getParameter("age")));
 		info.setSno(request.getParameter("sno"));
 		info.setSname(request.getParameter("sname"));

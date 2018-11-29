@@ -38,7 +38,7 @@
             <li><a href="/listStudentInfo"><i class="glyphicon glyphicon-user"></i>学籍列表显示和添加</a></li>
             <li><a href="search.jsp"><i class="glyphicon glyphicon-th-list"></i>学生信息查询</a></li>
             <li><a href="/printStudentInfo"><i class="glyphicon glyphicon-th-list"></i>打印学生信息</a></li>
-            <li><a href="#"><i class="glyphicon glyphicon-asterisk"></i>统计学生页面</a></li>
+            <li><a href="/groupStat"><i class="glyphicon glyphicon-asterisk"></i>统计学生页面</a></li>
              <li><a href="/exportExcel"><i class="glyphicon glyphicon-edit"></i>导出excel</a></li>
           </ul>
           </li>

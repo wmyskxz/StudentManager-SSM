@@ -1,6 +1,8 @@
 package cn.wmyskxz.dao;
 
 import java.util.List;
+
+import cn.wmyskxz.entity.StudentGroup;
 import cn.wmyskxz.entity.StudentInfo;
 
 public interface StudentInfoDao {
@@ -15,4 +17,5 @@ public interface StudentInfoDao {
 	    List<StudentInfo> getStudentByClass(int class_no);
 	    List<StudentInfo> listStudent();
 	    List<StudentInfo> findAll();
+	    List<StudentGroup> groupByYear();
 }

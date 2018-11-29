@@ -14,6 +14,15 @@
         <result column="birth_date" property="birth_date" javaType="java.sql.Date"/>
         <result column="attend_date" property="attend_date" javaType="java.sql.Date"/>
     </resultMap>
+      <resultMap id="student_group" type="studentGroup">
+       <id column="id" property="id"/>
+        <result column="year" property="year"/>
+        <result column="count" property="count"/>
+      </resultMap>
+      <!--给学生按照入学年份分组-->
+      <select id="groupByYear" resultMap="student_group">
+      select id,YEAR(attend_date) as year,count(*) as count from student_info group by YEAR(attend_date)
+      </select>
   <!-- 查询数据条目 -->
     <select id="getTotal" resultType="int">
         SELECT COUNT(*) FROM student_info

@@ -11,6 +11,23 @@
     <link href="css/style.css" rel="stylesheet">
 
     <title>学生管理页面 - 编辑页面</title>
+    <style>
+body{
+
+background-position: center center;
+
+    
+    /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+    background-attachment: fixed;  //此条属性必须设置否则可能无效/
+    /* 让背景图基于容器大小伸缩 */
+   background-size: cover;
+   /* 设置背景颜色，背景图加载过程中会显示背景色 */
+   background-color:	#E6E6FA;
+
+
+
+}
+</style>
 </head>
 <body>
 <div class="editDIV">

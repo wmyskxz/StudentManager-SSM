@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.servlet.ServletOutputStream;
 
+import cn.wmyskxz.entity.StudentGroup;
 import cn.wmyskxz.entity.StudentInfo;
 
 public interface StudentInfoService {
@@ -19,4 +20,5 @@ public interface StudentInfoService {
 	    List<StudentInfo> getStudentByClass(int class_no);
 	    List<StudentInfo> listStudent();
 	    public void exportAls(FileInputStream fileInputStream, ServletOutputStream outputStream);
+	    List<StudentGroup> groupByYear();
 }

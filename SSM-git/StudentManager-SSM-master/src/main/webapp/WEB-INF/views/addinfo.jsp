@@ -5,8 +5,43 @@
 <head>
 <meta charset="utf-8">
 <title>增加学生信息</title>
+
+    <style>
+    .midbox{
+
+    text-align: center; /*让div内部文字居中*/
+   
+    border-radius: 20px;
+    
+    width: 350px;
+    height: 450px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   background-color:	#E6E6FA;
+}
+body{
+
+background-position: center center;
+
+    
+    /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+    background-attachment: fixed;  //此条属性必须设置否则可能无效/
+    /* 让背景图基于容器大小伸缩 */
+   background-size: cover;
+   /* 设置背景颜色，背景图加载过程中会显示背景色 */
+
+
+
+
+}
+</style>
 </head>
 <body>
+<div class="midbox">
 <div class="navbar navbar-duomi navbar-static-top" role="navigation">
   <div class="container-fluid">
      <div class="navbar-header">
@@ -16,55 +51,7 @@
  </div>
 <div class="container-fluid">
        <div class="row">
-         <div class="col-md-2">
-         <ul id="main-nav" class="nav nav-tabs nav-stacked" style="">
-             <li class="active">
-               <a href="#">
-                <i class="glyphicon glyphicon-th-large"></i>
-                              首页 
-                </a>
-            </li>
-             <li id="ul_menu">
-              <a href="#systemSetting" class="nav-header collapsed" data-toggle="collapse">
-               <i class="glyphicon glyphicon-cog"></i>
-         学籍信息管理
-                <span class="pull-right glyphicon glyphicon-chevron-down"></span>
-             </a>
-          <ul id="systemSetting" class="nav nav-list collapse secondmenu" style="height: 0px;">
-            <li><a href="/listStudentInfo"><i class="glyphicon glyphicon-user"></i>学籍列表显示</a></li>
-            <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>学生信息增加</a></li>
-            <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>学生信息查询</a></li>
-            <li><a href="#"><i class="glyphicon glyphicon-asterisk"></i>打印学生成绩</a></li>
-             <li><a href="#"><i class="glyphicon glyphicon-edit"></i>导出excel</a></li>
-          </ul>
-          </li>
-          <li id="ul_menu">
-             <a href="#systemSetting1" class="nav-header collapsed" data-toggle="collapse">
-             <i class="glyphicon glyphicon-cog" ></i>班级信息管理
-              <span class="pull-right glyphicon glyphicon-chevron-down"></span></a>
-               <ul id="systemSetting1" class="nav nav-list collapse secondmenu" style="height: 0px;">
-            <li><a href="#"><i class="glyphicon glyphicon-user"></i>班级信息显示</a></li>
-            <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>查询班级</a></li>
-            <li><a href="#"><i class="glyphicon glyphicon-asterisk"></i>导出班级名单</a></li>
-            </ul>
-              
-         </li>
-         <li id="ul_menu">
-             <a href="#systemSetting2" class="nav-header collapsed" data-toggle="collapse">
-             <i class="glyphicon glyphicon-globe"></i>课程管理模块<span class="label label-warning pull-right">5</span></a>
-               <ul id="systemSetting2" class="nav nav-list collapse secondmenu" style="height: 0px;">
-            <li><a href="#"><i class="glyphicon glyphicon-user"></i>课程信息显示</a></li>
-            <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>查询课程</a></li>
-            <li><a href="#"><i class="glyphicon glyphicon-asterisk"></i>导打印学生成绩</a></li>
-            </ul>
-          </li >
-         <li id="ul_menu">
-             <a href="./charts.html"><i class="glyphicon glyphicon-calendar"></i>修改密码</a></li>
-        <li>
-              <a href="#"><i class="glyphicon glyphicon-fire"></i>关于系统</a>
-        </li>
-     </ul>
-</div>
+         
     <div class="addDIV">
 
     <div class="panel panel-success">
@@ -124,5 +111,6 @@
 </div>
 </div>
 </div> 
+</div>
 </body>
 </html>

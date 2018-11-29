@@ -25,6 +25,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import cn.wmyskxz.dao.StudentInfoDao;
+import cn.wmyskxz.entity.StudentGroup;
 import cn.wmyskxz.entity.StudentInfo;
 
 @Service(value="studentInfo")
@@ -156,6 +157,11 @@ public class StudentInfoServiceImpl implements StudentInfoService {
 		 } catch (IOException e) {
 		 e.printStackTrace();
 		 }
+	}
+
+	public List<StudentGroup> groupByYear() {
+		// TODO Auto-generated method stub
+		return studentDao.groupByYear();
 	}
 
 	

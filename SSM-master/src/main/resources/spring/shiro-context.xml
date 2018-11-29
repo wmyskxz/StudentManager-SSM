@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+				http://www.springframework.org/schema/context
+				 http://www.springframework.org/schema/context/spring-context-3.2.xsd
+				http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+				 http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+		<property name="securityManager" ref="securityManager" /> <!--加载管理器-->
+		<property name="loginUrl" value="/login" />    <!--没有登录的时候，跳转到这个页面-->
+		<property name="unauthorizedUrl" value="/nopermission" /> <!--当没有权限的时候，跳转到这个url-->
+		 
+		<property name="filterChainDefinitions">
+			<value>
+				/login = anon <!--可以不需要登录-->
+				/readName = authc, perms[/readName]  <!-- perms 表示需要该权限才能访问的页面 -->
+				/readData = authc, perms[/readData]
+				/* = authc <!-- authc 表示需要认证才能访问的页面 -->
+			</value>
+		</property>
+	</bean>
+
+	<!-- 自定义Realm -->
+	<bean id="myShiroRealm" class="com.hui.login.MyShiroReaml">
+		<!-- businessManager 用来实现用户名密码的查询 -->
+		<property name="userService" ref="accountService"/>
+	</bean>
+
+	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+		<!-- 注入realm -->
+		<property name="realm" ref="myShiroRealm"/>
+	</bean>
+
+	<!--声明一个Service 注入到自定义Realm-->
+	<bean id="accountService" class="com.hui.service.UserServiceImpl"/>
+	 <!-- bean id="shiroCacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager"> 
+		<property name="cacheManager" ref="cacheManager"  </bean> /--> 
+	
+</beans>

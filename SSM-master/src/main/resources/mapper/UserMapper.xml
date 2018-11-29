@@ -1,0 +1,18 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hui.dao.UserMapper">
+    <select id="getUserByUserName" resultType="com.hui.entity.User">
+        select * FROM user
+        WHERE account= #{0}
+    </select>
+    <select id="getUserRoleByUserId" resultType="int">
+        SELECT roleid FROM user_role
+        where userid = #{_parameter}
+    </select>
+
+    <select id="getPermissionsByRoleId" resultType="com.hui.entity.Permission">
+        SELECT a.id,a.url,a.roleid as roleId,a.description FROM permission a
+        WHERE roleid = #{_parameter}
+    </select>
+</mapper>

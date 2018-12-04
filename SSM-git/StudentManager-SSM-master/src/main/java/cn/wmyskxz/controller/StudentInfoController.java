@@ -128,14 +128,16 @@ public class StudentInfoController {
 
 	        request.setAttribute("students", students);
 	        request.setAttribute("page", page);
+	        
+	      /*  for(int i=0;i< students.size();i++) {
+				 System.out.println(students.get(i));
+			 }*/
 
 	        return "listStudentInfo";
 	    }
 	@RequestMapping("/addStudentInfo")
 	public String addStudentInfo(HttpServletRequest request,HttpServletResponse response) {
 		StudentInfo info=new StudentInfo();
-		if(request.getParameter("sname")==null)
-			return "addinfo";
 		info.setAge(Integer.parseInt(request.getParameter("age")));
 		info.setSno(request.getParameter("sno"));
 		info.setSname(request.getParameter("sname"));

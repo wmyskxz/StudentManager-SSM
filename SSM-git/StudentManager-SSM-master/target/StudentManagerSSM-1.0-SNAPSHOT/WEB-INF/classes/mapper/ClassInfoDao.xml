@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"     
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.wmyskxz.dao.ClassInfoDao">
+	<resultMap id="class_info" type="classinfo">
+		<id column="class_no" property="cno" />
+		<id column="stu_num" property="snum" />
+		<id column="headteacher" property="head" />
+
+	</resultMap>
+
+	<select id="showClassInfo" resultType="ClassInfo">
+		select * from class_info
+	</select>
+
+	<select id="findClassByNo" parameterType="int"
+		resultType="ClassInfo">
+		select * from class_info where class_no=#{No}
+	</select>
+
+</mapper>

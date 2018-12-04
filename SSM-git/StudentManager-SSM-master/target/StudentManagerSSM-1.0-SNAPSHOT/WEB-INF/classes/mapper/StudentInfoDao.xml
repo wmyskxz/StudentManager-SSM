@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        <!-- 将namespace的值设置为DAO类对应的路径 -->
+<mapper namespace="cn.wmyskxz.dao.StudentInfoDao">
+    <resultMap id="student_info" type="studentInfo">
+        <id column="id" property="id"/>
+        <result column="sno" property="sno"/>
+        <result column="class_no" property="class_no"/>
+        <result column="sname" property="sname"/>
+        <result column="age" property="age"/>
+        <result column="sex" property="sex"/>
+        <result column="phone" property="phone"/>
+        <result column="birth_date" property="birth_date" javaType="java.sql.Date"/>
+        <result column="attend_date" property="attend_date" javaType="java.sql.Date"/>
+    </resultMap>
+      <resultMap id="student_group" type="studentGroup">
+       <id column="id" property="id"/>
+        <result column="year" property="year"/>
+        <result column="count" property="count"/>
+      </resultMap>
+      <!--给学生按照入学年份分组-->
+      <select id="groupByYear" resultMap="student_group">
+      select id,YEAR(attend_date) as year,count(*) as count from student_info group by YEAR(attend_date)
+      </select>
+  <!-- 查询数据条目 -->
+    <select id="getTotal" resultType="int">
+        SELECT COUNT(*) FROM student_info
+    </select>
+
+    <!-- 增加一条数据 -->
+    <insert id="addStudent" parameterType="StudentInfo">
+        INSERT INTO student_info (id,sno,sname,age,sex,birth_date,attend_date,phone,class_no)
+        VALUES(NULL, #{sno}, #{sname}, #{age}, #{sex}, #{birth_date},#{attend_date},#{phone},#{class_no})
+    </insert>
+
+    <!-- 删除一条数据 -->
+    <delete id="deleteStudent" parameterType="int">
+        DELETE FROM student_info WHERE id = #{id}
+    </delete>
+
+    <!-- 更新一条数据 -->
+    <update id="updateStudent" parameterType="StudentInfo">
+        UPDATE student_info SET sno = #{sno}, sname = #{sname},
+        age = #{age}, sex = #{sex}, birth_date = #{birth_date},attend_date = #{attend_date}
+        ,phone = #{phone},class_no = #{class_no} WHERE id = #{id}
+    </update>
+
+    <!-- 查询一条数据 -->
+    <select id="getStudent" resultMap="student_info" parameterType="int">
+        SELECT * FROM student_info WHERE id = #{id}
+    </select>
+    <!--按照学号查询-->
+     <select id="getStudentByNo" resultMap="student_info" parameterType="String">
+        SELECT * FROM student_info WHERE sno = #{sno}
+    </select>
+     <!--按照姓名查询-->
+     <select id="getStudentByName" resultMap="student_info" parameterType="String">
+        SELECT * FROM student_info WHERE sname = #{sname}
+    </select>
+     <!--按照姓名查询-->
+     <select id="getStudentByClass" resultMap="student_info" parameterType="int">
+       select * from student_info where class_no=#{class_no}
+    </select>
+    <!-- 查询从start位置开始的count条数据-->
+    <select id="list" resultMap="student_info">
+        SELECT * FROM student_info ORDER BY sno desc limit #{param1}, #{param2}
+    </select>
+      <select id="listStudent" resultMap="student_info">
+        SELECT * FROM student_info ORDER BY sno desc 
+    </select>
+    <select id="findAll" resultMap="student_info">
+ select sno , sname ,age , sex ,birth_date ,attend_date ,phone from student_info 
+ </select>
+    
+</mapper>
